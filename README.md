@@ -16,11 +16,10 @@ Using simulated population data, we:
 - **Q15**: Estimate population mean using a sample of size 50  
 - **Q16**: Why using the z-distribution is incorrect when σ is unknown  
 - **Q17**: Compute correct confidence interval using the t-distribution  
-- **Q18**: Conduct a hypothesis test for whether the mean ≠ 172 cm  
 
 ## 📂 Files
 
-- `confidence_interval_analysis.ipynb`: Final cleaned notebook for Q15–Q18
+- `confidence_interval_analysis.ipynb`: Final cleaned notebook for Q14–Q17
 - `Frequentist Inference Case Study - Part A (3).ipynb`: Raw/working notebook
 - `insurance2.csv`: Sample dataset for other exercises
 - `Frequentist Inference Case Study - Part B (2).ipynb`: (optional Part B content)
