@@ -1,91 +1,78 @@
-# Frequentist Inference Case Study - Part A
+# 📊 Frequentist Inference Case Study
 
-This project explores core concepts in frequentist statistics, including confidence intervals and hypothesis testing. It was developed as part of Springboard's Data Science Career Track.
-
-## 📘 Overview
-
-Using simulated population data, we:
-
-- Estimate population parameters from samples
-- Calculate 95% confidence intervals using both z- and t-distributions
-- Identify when it’s inappropriate to use the z-distribution
-- Perform a one-sample t-test to determine statistical significance
-
-## 🔍 Key Questions Answered
-
-- **Q15**: Estimate population mean using a sample of size 50  
-- **Q16**: Why using the z-distribution is incorrect when σ is unknown  
-- **Q17**: Compute correct confidence interval using the t-distribution
-- 
-# 📘 Frequentist Inference Case Study – Part B
-
-This notebook applies frequentist statistical inference to a real-world dataset (`insurance2.csv`) to explore differences in medical charges.
+This project explores foundational concepts in **frequentist statistics** using both simulated and real-world data. It was developed as part of Springboard’s Data Science Career Track.
 
 ---
 
-## 🔍 Objective:
-Use statistical tests to determine whether:
-- The average charge has dropped below a critical threshold
-- People with insurance are charged more than those without
+## 📁 Part A – Simulated Population Analysis (Heights)
+
+Using synthetic height data generated from a normal distribution, this notebook demonstrates:
+
+- Estimating population parameters from samples
+- Applying the Central Limit Theorem (CLT)
+- Calculating 95% confidence intervals using **z** and **t distributions**
+- Performing a **one-sample t-test** for hypothesis testing
+- Understanding when it is **inappropriate to use a z-test**
+
+### 🔍 Key Questions Answered
+
+- **Q15**: Estimate the population mean from a sample of size 50
+- **Q16**: Why the **z-distribution** is invalid when σ is unknown
+- **Q17**: Correct confidence interval using the **t-distribution**
 
 ---
 
-## ✅ Topics Covered:
+## 📁 Part B – Real-World Data Inference (Medical Charges)
+
+This notebook analyzes real data (`insurance2.csv`) to explore whether:
+
+- The average medical charge has dropped below a critical threshold
+- **Insured individuals** are charged **more** than those without insurance
+
+### ✅ Topics Covered
 
 - Visualizing skewed real-world data
-- Applying the Central Limit Theorem (CLT) to justify t-tests
-- Calculating one-sided and two-sided confidence intervals
-- Performing hypothesis testing using `scipy.stats.ttest_ind`
-- Interpreting p-values and rejecting or retaining null hypotheses
+- Justifying the use of the CLT to apply t-tests
+- Calculating **one-sided** and **two-sided** confidence intervals
+- Performing **one-sample** and **two-sample t-tests**
+- Interpreting **p-values** and drawing conclusions from results
 
----
+### 🧪 Key Findings
 
-## 📊 Statistical Concepts Applied:
-
-- **One-sample t-test** to compare average charge against a fixed value
-- **Two-sample t-test** to compare insured vs. uninsured groups
-- **Manual and automated calculations** of t-statistics and p-values
-- Forming null and alternative hypotheses and drawing conclusions
-
----
-
-## 🧪 Key Findings:
-
-- The average charge was **well above** \$12,000 — no business concern
-- There is a **statistically significant difference** in charges:
-  > Insured individuals are charged significantly more than uninsured individuals  
+- The average charge was **well above** \$12,000 → no concern
+- There is a **statistically significant** difference in charges:
+  > Insured individuals are charged **significantly more**  
   > (t ≈ 11.89, p ≈ 0.0000)
 
 ---
 
-## 📦 Tools:
-- Python
-- NumPy, pandas
-- SciPy (`ttest_ind`, `norm.cdf`)
-- Matplotlib
-
-
-
-## 📂 Files
-
-- `confidence_interval_analysis.ipynb`: Final cleaned notebook for Q14–Q17
-- `Frequentist Inference Case Study - Part A (3).ipynb`: Raw/working notebook
-- `insurance2.csv`: Sample dataset for other exercises
-- `Frequentist Inference Case Study - Part B (2).ipynb`: (optional Part B content)
-
-## 🧪 Tools Used
+## 📦 Tools Used
 
 - Python 3.10+
 - NumPy
-- SciPy
+- pandas
+- SciPy (`ttest_ind`, `norm.cdf`)
 - Matplotlib
 - Jupyter Notebook
 
+---
+
+## 📂 Project Files
+
+- `Frequentist Inference Case Study - Part A (3).ipynb`: Simulated analysis (heights)
+- `Frequentist Inference Case Study - Part B (2).ipynb`: Real-world data analysis (charges)
+- `insurance2.csv`: Dataset used in Part B
+- `confidence_interval_analysis.ipynb`: (optional notebook for Q14–Q17 deep dive)
+
+---
+
 ## ✅ Status
 
-This analysis focuses on simulation-based inference and lays a foundation for more advanced statistical modeling.
+This case study demonstrates simulation-based inference techniques and lays the groundwork for more advanced statistical modeling and real-world decision-making.
+
+---
 
 ## 👤 Author
 
-Mesfin Kebede  
+**Mesfin Kebede**  
 [GitHub Profile](https://github.com/mesfin-k)
